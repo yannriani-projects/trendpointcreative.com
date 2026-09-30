@@ -1,0 +1,60 @@
+name: 🚀 Deploy website on push
+
+on:
+  push:
+    branches:
+      - develop
+      - staging
+      - main
+
+jobs:
+
+  deploy-develop:
+    name: 🛠️ Deploy Development
+    if: github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v6
+
+      - name: 📂 Deploy Development
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USER_DEVELOP }}
+          password: ${{ secrets.FTP_PASS_DEVELOP }}
+
+
+  deploy-staging:
+    name: 🧪 Deploy Staging
+    if: github.ref == 'refs/heads/staging'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v6
+
+      - name: 📂 Deploy Staging
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USER_STAGING }}
+          password: ${{ secrets.FTP_PASS_STAGING }}
+
+
+  deploy-main:
+    name: 🚀 Deploy Production
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v6
+
+      - name: 📂 Deploy Production
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
