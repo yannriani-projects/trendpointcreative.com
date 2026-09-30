@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Trendpoint Creative — Studio Kreatif untuk Brand, Konten & Produk Digital</title>
+  <meta name="description" content="Trendpoint Creative membantu brand dan UMKM mengubah ide jadi media sosial, konten, visual, foto produk, company profile, dan produk digital." />
+  <link rel="canonical" href="https://trendpointcreative.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Trendpoint Creative — Studio Kreatif untuk Brand, Konten & Produk Digital" />
+  <meta property="og:description" content="Temukan titikmu. Berkarya dengan tujuan. Studio kreatif yang terus berkembang untuk brand, UMKM, creator & ide-ide baru." />
+  <meta property="og:url" content="https://trendpointcreative.com/" />
+  <meta property="og:image" content="/assets/og-image.jpg" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Trendpoint Creative" />
+  <meta name="twitter:description" content="Temukan titikmu. Berkarya dengan tujuan." />
+  <meta name="twitter:image" content="/assets/og-image.jpg" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- ============================= HEADER / NAV ============================= -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="#home" class="logo"><span id="logo-name">Trendpoint</span></a>
+      <nav class="nav-links-desktop" id="nav-links" aria-label="Navigasi utama"></nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop">
+    <nav class="mobile-nav-links" id="mobile-nav-links" aria-label="Navigasi mobile"></nav>
+  </div>
+
+  <main>
+
+    <!-- ============================= HERO ============================= -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <span class="hero-badge">Studio Kreatif — Sosial — Konten — Visual — Digital</span>
+        <h1>
+          Biar usahamu makin dikenal,
+          <span class="line-2">brandingnya kami bantu.</span>
+        </h1>
+        <p class="hero-sub">Trendpoint Creative membantu brand dan UMKM mengubah ide jadi konten, visual, dan pengalaman digital yang benar-benar dilihat orang.</p>
+        <div class="hero-cta-row">
+          <button type="button" class="btn btn-primary" data-open-modal>Mulai berkarya →</button>
+          <a href="#what-we-do" class="btn-ghost">Lihat karya kami ↓</a>
+        </div>
+        <div class="hero-stage" id="hero-stickers" aria-hidden="true"></div>
+      </div>
+      <div class="marquee-strip" aria-hidden="true">
+        <span class="marquee-track" id="marquee-track"></span>
+      </div>
+    </section>
+
+    <!-- ============================= INTERACTIVE INTRO ============================= -->
+    <section class="section" id="what-we-do">
+      <div class="section-inner">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Yang kami kerjakan</p>
+          <h2>Jadi, sebenarnya kami ngerjain apa?</h2>
+        </div>
+        <div class="intro-grid" id="intro-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================= SERVICE QUIZ ============================= -->
+    <section class="section section-alt" id="quiz">
+      <div class="section-inner">
+        <div class="quiz-card" data-reveal>
+          <div class="section-head">
+            <p class="eyebrow">Cek cepat</p>
+            <h2>Brand kamu sekarang butuh apa?</h2>
+            <p>Pilih yang paling sesuai sekarang — kami arahkan ke tempat yang tepat untuk mulai.</p>
+          </div>
+          <div class="quiz-options" id="quiz-options" role="group" aria-label="Pilih kebutuhan brand kamu"></div>
+          <div class="quiz-result" id="quiz-result" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PORTOFOLIO — PROYEK SENDIRI ============================= -->
+    <section class="section" id="playground">
+      <div class="section-inner">
+        <div class="playground-top" data-reveal>
+          <p class="eyebrow">Portofolio</p>
+          <h2>Belum banyak, tapi jujur dan nyata.</h2>
+          <p>Kami memang masih membangun portofolio klien — tapi kami sudah membuktikan kemampuan kami lewat brand sendiri, sebelum berkarya untuk orang lain.</p>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid" data-reveal></div>
+      </div>
+    </section>
+
+    <!-- ============================= MANIFESTO ============================= -->
+    <section class="section manifesto">
+      <div class="section-inner">
+        <h2 class="manifesto-heading">Kami nggak cuma bikin konten.</h2>
+        <div class="manifesto-lines" id="manifesto-lines"></div>
+      </div>
+    </section>
+
+    <!-- ============================= SERVICES ============================= -->
+    <section class="section" id="services">
+      <div class="section-inner">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Layanan</p>
+          <h2>Semua layanan kami, secara detail.</h2>
+          <p>Harga fleksibel dan bisa disesuaikan dengan budget UMKM. Ada harga khusus untuk mitra pertama kami — chat langsung untuk penawarannya.</p>
+        </div>
+        <div class="services-list" id="services-list"></div>
+      </div>
+    </section>
+
+    <!-- ============================= CREATIVE PROCESS ============================= -->
+    <section class="section section-alt" id="process">
+      <div class="section-inner">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Cara kami bekerja</p>
+          <h2>Dari ide jadi sesuatu yang nyata.</h2>
+        </div>
+        <div class="process-track" id="process-track">
+          <div class="process-line-base"></div>
+          <div class="process-line-fill" id="process-fill"></div>
+          <div id="process-steps"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= WHY TRENDPOINT ============================= -->
+    <section class="section" id="why">
+      <div class="section-inner">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Kenapa Trendpoint</p>
+          <h2>Bukan pitch agency generik biasa.</h2>
+        </div>
+        <div class="why-grid" id="why-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================= OPEN FOR COLLABORATION ============================= -->
+    <section class="section" id="collaboration">
+      <div class="collab" data-reveal>
+        <div class="collab-inner">
+          <h2>Brand kamu bisa jadi cerita kreatif kami selanjutnya.</h2>
+          <p>Trendpoint Creative membuka slot terbatas untuk brand, creator, dan UMKM. Kami sedang membangun portofolio dan mencari mitra kreatif awal yang mau berkembang bersama kami.</p>
+          <span class="collab-highlight">Harga khusus untuk mitra pertama kami — chat langsung untuk penawaran</span>
+          <div class="collab-chips" id="collab-chips"></div>
+          <div class="collab-cta-row">
+            <button type="button" class="btn btn-primary" data-open-modal>Mulai proyek →</button>
+            <a href="#" id="dm-instagram" class="btn btn-secondary" target="_blank" rel="noopener">DM kami di Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= FINAL CTA ============================= -->
+    <section class="section" id="start">
+      <div class="final-cta" data-reveal>
+        <span class="blob blob-1" aria-hidden="true"></span>
+        <span class="blob blob-2" aria-hidden="true"></span>
+        <h2>Punya brand?<br />Punya ide?<br />Yuk temukan titikmu.</h2>
+        <div class="final-cta-row">
+          <button type="button" class="btn btn-primary" data-open-modal>Mulai proyek →</button>
+          <a href="#" id="chat-whatsapp" class="btn btn-secondary" target="_blank" rel="noopener">Chat kami →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="section-inner">
+      <div class="footer-top">
+        <div>
+          <p class="footer-logo" id="footer-logo"></p>
+          <p class="footer-tagline" id="footer-tagline"></p>
+        </div>
+        <nav class="footer-links" id="footer-links" aria-label="Sosial media"></nav>
+      </div>
+      <div class="footer-bottom">
+        <span id="footer-note"></span>
+        <span>&copy; <span id="footer-year"></span> Trendpoint Creative.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================= PROJECT INQUIRY MODAL ============================= -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-panel">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Tutup">&times;</button>
+      <h2 id="modal-title">Yuk, buat sesuatu.</h2>
+
+      <form id="inquiry-form" novalidate>
+        <div class="field">
+          <label for="field-name">Nama</label>
+          <input id="field-name" name="name" type="text" required autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="field-brand">Nama brand</label>
+          <input id="field-brand" name="brand" type="text" autocomplete="organization" />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="field-email">Email</label>
+            <input id="field-email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="field-handle">Instagram / website</label>
+            <input id="field-handle" name="handle" type="text" placeholder="@brandkamu" />
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="field-service">Kamu butuh apa?</label>
+            <select id="field-service" name="service" required></select>
+          </div>
+          <div class="field">
+            <label for="field-budget">Budget</label>
+            <select id="field-budget" name="budget">
+              <option value="">Tidak ingin menyebutkan</option>
+              <option>Di bawah Rp1 juta</option>
+              <option>Rp1–3 juta</option>
+              <option>Rp3–5 juta</option>
+              <option>Rp5 juta+</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="field-description">Deskripsi proyek</label>
+          <textarea id="field-description" name="description" required></textarea>
+        </div>
+        <div class="field">
+          <label for="field-source">Dari mana kamu tahu kami?</label>
+          <input id="field-source" name="source" type="text" />
+        </div>
+        <button type="submit" class="btn btn-primary modal-submit">Kirim proyek →</button>
+      </form>
+
+      <div class="modal-success" id="modal-success" hidden tabindex="-1">
+        <h3>Oke, sudah kami terima.</h3>
+        <p>Kirim lewat WhatsApp atau email di bawah ini, nanti kami balas secepatnya.</p>
+        <div class="modal-success-actions">
+          <a href="#" id="send-whatsapp" class="btn btn-primary" target="_blank" rel="noopener">Kirim via WhatsApp</a>
+          <a href="#" id="send-email" class="btn btn-secondary">Kirim via email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
