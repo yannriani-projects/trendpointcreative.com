@@ -145,5 +145,5 @@ WhatsApp number (it currently holds a placeholder number).
   themselves. To wire it to a real backend later, replace the `submit`
   handler in `initModal()` (`js/main.js`) with a `fetch()` POST to your
   endpoint — the `FormData` collection logic can stay as-is.
-- Everything respects `prefers-reduced-motion` (parallax, marquee, scroll
+- Everything respects `prefers-reduced-motion` (parallax, scroll
   reveals, and the process timeline all degrade to static/instant).

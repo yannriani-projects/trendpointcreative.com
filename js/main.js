@@ -95,7 +95,7 @@ function renderFooterAndSocial() {
 }
 
 /* ---------------------------------------------------------------------- */
-/* HERO STICKERS + MARQUEE                                                */
+/* HERO STICKERS                                                           */
 /* ---------------------------------------------------------------------- */
 const STICKER_WORDS = ["Konten", "Ide", "Sosial", "Visual", "Digital", "Brand"];
 
@@ -123,12 +123,6 @@ function initParallax() {
   hero.addEventListener("pointerleave", () => {
     stickers.forEach((s) => (s.style.transform = "translate(0,0) rotate(var(--r))"));
   });
-}
-
-function renderMarquee() {
-  const track = $("#marquee-track");
-  const text = "Sosial &nbsp;\u2022&nbsp; Konten &nbsp;\u2022&nbsp; Visual &nbsp;\u2022&nbsp; Digital &nbsp;\u2022&nbsp; Ide &nbsp;\u2022&nbsp; Brand &nbsp;\u2022&nbsp; ";
-  track.innerHTML = text.repeat(4);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -443,7 +437,6 @@ function init() {
   renderNav();
   renderFooterAndSocial();
   renderStickers();
-  renderMarquee();
   renderIntroCards();
   renderQuiz();
   renderPortfolio();
