@@ -235,21 +235,25 @@ body.nav-open { overflow: hidden; }
 .sticker-4 { --r: -6deg; top: 46%; left: 16%; background: var(--lime); }
 .sticker-5 { --r: 6deg;  top: 42%; left: 82%; background: var(--white); }
 
-.service-ribbon {
+.marquee-strip {
   border-top: 1px solid rgba(22,24,44,0.1);
   border-bottom: 1px solid rgba(22,24,44,0.1);
+  overflow: hidden;
   background: var(--ink);
   color: var(--cream);
-  padding: 12px 16px;
+  padding: 12px 0;
   margin-top: clamp(24px, 5vw, 48px);
-  text-align: center;
 }
-.service-ribbon-text {
-  display: block;
+.marquee-track {
+  display: inline-block;
+  white-space: nowrap;
   font-family: var(--font-display);
   font-size: 0.85rem;
-  line-height: 1.7;
+  letter-spacing: 0.03em;
+  animation: marquee 26s linear infinite;
+  padding-left: 100%;
 }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-100%); } }
 
 /* ---------- 6. INTRO CARDS -------------------------------------------------- */
 .intro-grid {
@@ -587,4 +591,5 @@ input:focus, select:focus, textarea:focus { border-color: var(--ink); }
 /* ---------- REDUCED MOTION --------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  .marquee-track { animation: none; }
 }
